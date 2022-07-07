@@ -1,0 +1,36 @@
+.ldiv{
+    /* display: block; */
+    margin: 3vh;
+   
+   
+}
+.ldiv > input{
+    width:30vw;
+    height:3vh;
+    background-color: #ffffff;
+}
+
+.b{
+    height:4vh;
+    background-color: hsl(180, 37%, 73%);
+}
+.landingpagecontent_title{
+    display: block;
+}
+.combine{
+    /* width: 100vh; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    /* justify-content: center; */
+}
+
+.combine > p{
+    font-size: 1.2vw;
+    font-weight: bolder;
+    color:rgb(255, 246, 127)
+}
+
