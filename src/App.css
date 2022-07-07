@@ -21,6 +21,8 @@ body{
 
 .Bannercontents > h1{
   font-size: 18px;
+  width:80vw;
+  background-color: antiquewhite;
 }
 
 }
