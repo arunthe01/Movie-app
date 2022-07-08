@@ -25,4 +25,9 @@ body{
   /* background-color: antiquewhite; */
 }
 
+.row_poster{
+ 
+  height: 180px!important;
+}
+
 }
