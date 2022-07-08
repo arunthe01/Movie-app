@@ -23,12 +23,13 @@
     
     height: 50px;
     /* background-color:  rgb(232, 240, 243); */
-    /* border-bottom: 1px solid rgb(171, 217, 232) ; */
+   
     
 }
 
 .dc{
-    background-color: hsl(0, 0%, 100%);
+    background-color: hwb(0 14% 86%);
+    border-bottom: 1px solid rgb(255, 255, 255) ;
     /* height: 50px; */
 }
 
