@@ -2,7 +2,7 @@
 import './Banner.css';
 import axios from 'axios';
 import React, { useEffect, useState } from "react";
-import requests from '../../Requests/request';
+import requests from '../../Requests/requests';
 // import Navbar from '../Navbar/Navbar';
 
 function Banner() {
@@ -19,7 +19,8 @@ function Banner() {
 
     async function fetchData() {
         const request = await axios.get(
-            "https://api.themoviedb.org/3/trending/all/week?api_key=a3b71fbc78c80fd175316bffe373a71b&language=en-US");
+          "https://api.themoviedb.org/3/trending/all/week?api_key=a3b71fbc78c80fd175316bffe373a71b&language=en-US")
+         
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length )

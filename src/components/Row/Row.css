@@ -17,10 +17,11 @@
     overflow-y: hidden;
 }
 .row_poster{
-    height: 100px;
+    /* height: 100px; */
     object-fit: contain;
     padding: 0 5px;
     transition: transform 0.5s;
+    height: 250px!important;
 }
 .row_poster:hover{
     transform: scale(1.2);

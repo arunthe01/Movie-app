@@ -11,4 +11,6 @@ const requests = {
 };
 //https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US
 export default requests;
-// https://image.tmdb.org/t/p/original/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US
+// https://image.tmdb.org/t/p/original/trending/all/week?api_key=3563c65d49aec32d55c3b5dd49c7b021&language=en-US
+
+
