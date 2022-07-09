@@ -4,17 +4,20 @@
     display: flex;
     width: 100%;
     z-index: 1;
+    /* justify-content: space-between; */
+    background-color: #e7e7e7;
+    height: 50px;
 
 }
 
 .logo{
     position: fixed;
-    left: 10px;
+    left: 2px;
     top: 5px;
     height: 45px;
     object-fit: contain;
-    cursor: pointer;
-    /* width: 40vw; */
+    cursor: pointer; 
+     /* width: 40vw; */
 
 
 }
@@ -22,29 +25,44 @@
 .navcolor{
     
     height: 50px;
-    /* background-color:  rgb(232, 240, 243); */
+    background-color:  rgb(232, 240, 243);
+    background-color: transparent;
+
    
     
 }
 
 .dc{
-    background-color: hwb(0 14% 86%);
-    border-bottom: 1px solid rgb(255, 255, 255) ;
+    background-color: #272727;
+    border-bottom: 4px solid #181818 ;
+    /* border-radius: 8px; */
     /* height: 50px; */
 }
 
 .s{
-    height:5vh;
+    /* height:5vh; */
    
  
-    background-color: #2b4257;
+    background-color: #000000;
     color: aliceblue;
 
     border-radius: 1vh;
-    margin: 2vh;
+    /* margin: 2vh; */
   
-    font-size: 1vw;
+    /* font-size: 1vw; */
+    padding: 8px;
+   
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        /* color: blue; */
+        cursor: pointer;
+        /* width: 3vh; */
+    
   /* text-decoration: solid; */
+  text-decoration: none;
+  outline: none;
+  border: none;
 
 }
 
@@ -53,13 +71,45 @@ a{
 }
 
 .s:hover{
-    background-color: #75754b;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
+
+
 .userimg{
-    position: fixed;
+    /* position: fixed;
     top: 10px;
-    right: 20px;
-    color: blue;
+    right: 20px; */
+    /* color: blue; */
     cursor: pointer;
     width: 3vh;
 }
+
+.userhello{
+    /* position :absolute;
+    color: hsl(0, 100%, 100%);
+    bottom: 6px; */
+   
+    /* background-color: aquamarine; */
+    color:#ffffff;
+    font-weight: bolder;
+    font-size: 2vh;
+    display: block;
+    margin-right: 4px;
+  
+
+
+}
+.userdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    height: inherit;
+
+    
+}
+

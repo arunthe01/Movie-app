@@ -3,14 +3,24 @@ import "./Navbar.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import movie from "../../images/movie.png";
 import { Link } from "react-router-dom";
-import user from "../../images/user.png";
+import userpic from "../../images/userpic.png";
 import { useState } from 'react';
 import { useEffect } from 'react';
+import {useAuth0} from "@auth0/auth0-react"
 
-function Navbar({pr,logout,show}) {
+function Navbar({pr,logOut,show}) {
 
   const [dark, setdark] = useState(false);
+ 
+  const { logout} = useAuth0();
+const {user,loginWithRedirect} = useAuth0();
+  
 
+
+  const goToSignInPage = () => {
+    // navigate("/sign-in");
+    loginWithRedirect();
+  };
 
 const transitionNavbar= ()=> {
      if(window.scrollY > 100){
@@ -39,15 +49,18 @@ useEffect(() => {
         <img src={movie} className='logo'/>
 
       {
-       pr ? (<Link to="/sign-in">
-                <button className="s"> SIGN-IN</button>
-           </Link>):(" ")
-
+       pr ? (
+          
+                <button className="s" onClick={goToSignInPage}> SIGN-IN</button>
+                
+          ):(" ")
+          
+         
       }
 
       {
-        logout && <img src={user} className="userimg"/>
-
+        logOut &&(<div className='userdiv'> <h1 className='userhello'> {user && ` Hi, ${user.name}`}</h1><img src={userpic} className="userimg" onClick={()=> logout({returnTo: window.location.origin})}  />   </div>) 
+        
       }
 
     </div>

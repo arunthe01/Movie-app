@@ -2,8 +2,17 @@ import React from 'react';
 import "./Landingpage.css";
 import Navbar from '../../components/Navbar/Navbar';
 import { Link } from "react-router-dom";
+import {useAuth0} from "@auth0/auth0-react"
+
 
 function Landingpage() {
+  const {loginWithRedirect} = useAuth0();
+
+  const goToSignInPage = () => {
+    // navigate("/sign-in");
+    loginWithRedirect();
+  };
+
   return (
 
     <div className='lbody'>
@@ -24,9 +33,11 @@ function Landingpage() {
 
                   <div className='ldiv'>
                   <input type="text"/>
-                  <Link to="/sign-in">
-                      <button className="b">GET STARTED</button>
-                </Link>
+
+                   
+                 
+                      <button className="b" onClick={goToSignInPage}>GET STARTED</button>
+                     
               </div>
 
 

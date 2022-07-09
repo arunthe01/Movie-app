@@ -7,7 +7,7 @@ import Row from '../../components/Row/Row';
 function Homepage() {
   return (
     <div className='Homepagecont'>
-   <Navbar pr={false} logout={true} show={true} />
+   <Navbar pr={false} logOut={true} show={true} />
        <Banner/>
      <div className='hello'>
      <Row
