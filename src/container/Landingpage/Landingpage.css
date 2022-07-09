@@ -1,3 +1,13 @@
+
+.lbody{
+    height: 100vh;
+    /* background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg');
+    background-size: cover;
+    background-position: center center; */
+    background:linear-gradient(red,blue);
+    
+}
+
 .ldiv{
     /* display: block; */
     margin: 3vh;
@@ -12,7 +22,7 @@
 
 .b{
     height:4vh;
-    background-color: hsl(180, 37%, 73%);
+    background-color: hwb(140 17% 54%);
 }
 .landingpagecontent_title{
     display: block;
@@ -31,6 +41,6 @@
 .combine > p{
     font-size: 1.5vw;
     font-weight: bolder;
-    color:rgb(255, 246, 127)
+    color:hsl(0, 0%, 100%)
 }
 
