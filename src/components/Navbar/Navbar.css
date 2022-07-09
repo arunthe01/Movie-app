@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 1;
     /* justify-content: space-between; */
-    background:linear-gradient(rgb(255, 255, 255),rgb(148, 144, 144));
+    background-color: #ded6d6;
     height: 50px;
 
 }
