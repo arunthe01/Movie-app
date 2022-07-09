@@ -10,12 +10,13 @@ import userEvent from '@testing-library/user-event';
 function App() {
 
  const {user,isAuthenticated,isLoading} = useAuth0();
- console.log(user);
+//  console.log(user);
 
   return (
     <BrowserRouter>
      <Routes>
           <Route path="/" element = {isAuthenticated ?  <Homepage /> : <Landingpage/>}/>
+          {/* <Route path = "/" element = {isLoading && isAuthenticated ? <Homepage/> : <Landingpage/>}/> */}
           <Route path="/sign-in" element={<Signinbody />} />
         </Routes>
     </BrowserRouter>

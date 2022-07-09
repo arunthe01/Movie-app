@@ -59,7 +59,7 @@ useEffect(() => {
       }
 
       {
-        logOut &&(<div className='userdiv'> <h1 className='userhello'> {user && ` Hi, ${user.name}`}</h1><img src={userpic} className="userimg" onClick={()=> logout({returnTo: window.location.origin})}  />   </div>) 
+        logOut &&(<div className='userdiv'> <h1 className='userhello'> {user && ` Hi, ${user.name}`}</h1><img src={userpic} className="userimg" onClick={()=> logout({returnTo: window.location.origin,})}  />   </div>) 
         
       }
 
