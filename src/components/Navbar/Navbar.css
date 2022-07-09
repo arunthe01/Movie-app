@@ -33,7 +33,7 @@
 }
 
 .dc{
-    background:linear-gradient(rgb(255, 255, 255),rgb(148, 144, 144));
+    background-color: gray;
     border-bottom: 4px solid #181818 ;
     /* border-radius: 8px; */
     /* height: 50px; */
@@ -71,7 +71,7 @@ a{
 }
 
 .s:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     color: #000000;
 }
 
