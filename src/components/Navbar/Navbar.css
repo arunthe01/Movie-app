@@ -5,7 +5,8 @@
     width: 100%;
     z-index: 1;
     /* justify-content: space-between; */
-    background-color: #ded6d6;
+    background: linear-gradient(#595252,#0a0a0a);
+    /* background: transparent; */
     height: 50px;
 
 }
@@ -26,14 +27,14 @@
     
     height: 50px;
     /* background-color:  rgb(232, 240, 243); */
-    background-color: transparent;
+    background: transparent;
 
    
     
 }
 
 .dc{
-    background-color: gray;
+    background: linear-gradient(#595252,#0a0a0a);
     border-bottom: 4px solid #181818 ;
     /* border-radius: 8px; */
     /* height: 50px; */

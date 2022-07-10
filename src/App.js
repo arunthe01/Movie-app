@@ -17,7 +17,8 @@ function App() {
      <Routes>
           <Route path="/" element = {isAuthenticated ?  <Homepage /> : <Landingpage/>}/>
           {/* <Route path = "/" element = {isLoading && isAuthenticated ? <Homepage/> : <Landingpage/>}/> */}
-          <Route path="/sign-in" element={<Signinbody />} />
+          {/* <Route path="/sign-in" element={<Signinbody />} /> */}
+          {/* <Route path = "/" element = {<Homepage />}/> */}
         </Routes>
     </BrowserRouter>
   );
